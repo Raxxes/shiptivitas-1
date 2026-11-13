@@ -1,25 +1,35 @@
+
 .Card {
-  background-color: lightgrey;
-  font-size: 12px;
-  padding: 20px;
-  margin-bottom: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  cursor: grab;
+  color: #222;
+  background: #e0e0e0;
+  border-left: 5px solid #888;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
 }
 
-.Card-grey {
-  background-color: rgba(167, 158, 158, 0.671);
-  color: black;
-}
-
-.Card-blue {
-  background-color: skyblue;
-  color: white;
-}
-
-.Card-green {
-  background-color: rgb(150, 190, 150);
-  color: white;
+.Card:active {
+  cursor: grabbing;
 }
 
 .Card-title {
   font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.Card-description {
+  font-size: 13px;
+  color: #555;
+}
+
+.Card-in-progress {
+  background: #d6eaff;
+  border-left-color: #1976d2;
+}
+
+.Card-complete {
+  background: #d9f5df;
+  border-left-color: #2e9d50;
 }
